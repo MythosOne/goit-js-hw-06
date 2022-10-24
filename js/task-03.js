@@ -16,11 +16,13 @@ const images = [
 const refs = document.querySelector(".gallery");
 // console.log(refs);
 
-const galleryImg = images.map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width="320 px">`);
+const galleryImg = images.map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width="320 px"></li>`);
 // console.table(galleryImg);
 refs.style.display = "flex";
 refs.style.flexDirection = "column";
 refs.style.gap = "20px";
 refs.style.listStyle = "none";
 refs.insertAdjacentHTML("afterbegin", galleryImg);
+
+//В 3 завданні також немає закриваючої лішки
 
