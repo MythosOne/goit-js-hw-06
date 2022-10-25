@@ -22,7 +22,7 @@ refs.style.display = "flex";
 refs.style.flexDirection = "column";
 refs.style.gap = "20px";
 refs.style.listStyle = "none";
-refs.insertAdjacentHTML("afterbegin", galleryImg);
+refs.insertAdjacentHTML("afterbegin", galleryImg.join(""));
 
 //В 3 завданні також немає закриваючої лішки
 
